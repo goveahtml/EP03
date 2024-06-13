@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: blue;
+            display: inline-block;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CUADROS DE CIRCULOS:</h2>
+    <p>5.	Elaborar un programa que permita dibujar un cuadro de círculos de 10 x 10.</p>
+    <div class="sultre">
+    <script>
+        let row = 0;
+
+        do {
+            let col = 0;
+            do {
+                document.write('<div class="circle"></div>');
+                col++;
+            } while (col < 10);
+            document.write('<br>');
+            row++;
+        } while (row < 10);
+    </script>
+    </div>
+</body>
+
+</html>

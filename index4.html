@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumatoria de potencias</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h2>SUMATORIA DE POTENCIAS:</h2><br>
+    <p>4.	Dado N calcular: (11)+(22)+(33)+……(NN)</p>
+    <div class="esultr">
+    <script>
+        let N = prompt("Introduce un número:");
+        N = parseInt(N);
+        let sum = 0;
+        let i = 1;
+
+        while (i <= N) {
+            sum += Math.pow(i, i);
+            i++;
+        }
+
+        document.write("La sumatoria es: " + sum);
+    </script>
+    </div>
+</body>
+</html>
